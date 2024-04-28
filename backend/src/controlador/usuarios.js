@@ -39,7 +39,7 @@ const login = async (req, res) => {
             return res.status(401).json({ mensagem: 'E-mail ou senha incorretos ! Tente novamente.' });
         }
 
-        return res.json({ mensagem: 'Login efetuado com sucesso.' });
+        return res.json(usuarioExistente);
     } catch (error) {
         console.log(error);
         return res.status(500).json({ mensagem: 'Erro interno do servidor.' });
