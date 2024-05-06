@@ -48,6 +48,7 @@ function Login() {
             ) : (
                 <div>
                     <h2>Olá, {user.nome}</h2>
+                    <img src='https://pbs.twimg.com/media/E6TbwvbWQAAg8t2.jpg' />
                 </div>
             )}
 
