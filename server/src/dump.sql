@@ -1,8 +1,0 @@
-CREATE DATABASE interface;
-
-CREATE TABLE usuarios(
-    id SERIAL PRIMARY KEY,
-    nome VARCHAR(1000) NOT NULL,
-    email VARCHAR(1000) NOT NULL UNIQUE,
-    senha VARCHAR(1000) NOT NULL
-);
