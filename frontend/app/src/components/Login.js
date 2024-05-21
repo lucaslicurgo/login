@@ -30,25 +30,39 @@ function Login() {
         }
     };
 
+    const handleLogout = async (e) => {
+        e.preventDefault();
+        setUser(null);
+        setError('');
+    };
+
     return (
 
         <div className='login-form-wrap'>
             {user === null ? (
                 <div>
-                    <h2>Login</h2>
+                    <h2>Seja bem-vindo! </h2>
+                    <hr/>
+                    <h3>Login</h3>
                     <form className='login-form'>
                         <input type='email' name='email' placeholder='Email' required onChange={(e) => setEmail(e.target.value)} />
                         <input type='password' name='password' placeholder='Senha' required onChange={(e) => setSenha(e.target.value)} />
                         <button type='submit' className='btn-login' onClick={(e) => handleLogin(e)}>Login</button>
                     </form>
-                    <p>
-                        {error}
-                    </p>
+                    {error && (
+                        <div>
+                            <p>{error}</p>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq4ZDhocReAQDOFQPVYc4VX-yIByqUeEL3aMBkJPqpuw&s" alt="Error" />
+                        </div>
+                    )}
                 </div>
             ) : (
                 <div>
                     <h2>Olá, {user.nome}</h2>
                     <img src='https://pbs.twimg.com/media/E6TbwvbWQAAg8t2.jpg' />
+                    <button type="button" 
+                        className='btn-login'
+                        onClick={(e) => handleLogout(e)}>Logout</button> 
                 </div>
             )}
 

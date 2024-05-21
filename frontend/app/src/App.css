@@ -1,5 +1,5 @@
 body {
-  background-color: #a79d9d;
+  background-image: url('https://images7.alphacoders.com/120/thumb-1920-1205979.png');
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   color: #2b3e51;
@@ -7,6 +7,12 @@ body {
 
 h2 {
   font-weight: 300;
+  text-align: center;
+}
+
+h3{
+  font-style: italic;
+  font-weight: 800;
   text-align: center;
 }
 
@@ -33,13 +39,13 @@ a:active:hover {
 }
 
 .login-form-wrap {
-  background-color: #fff;
+  background-color: #ffffff98;
   width: 70%;
   max-width: 400px;
   margin: 30px auto;
   text-align: center;
   padding: 20px 0 0 0;
-  border-radius: 4px;
+  border-radius: 10px;
   box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -72,6 +78,7 @@ input[type="email"] {
   position: relative;
   display: inline-block;
   background: none;
+  border-radius: 7px;
 }
 
 input[type="password"]:focus,
@@ -82,13 +89,13 @@ input[type="email"]:focus {
 .btn-login {
   border: none;
   display: block;
-  background-color: #ff0000;
+  background-color: #002e8a;
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   font-size: 18px;
   position: relative;
   display: inline-block;
@@ -98,11 +105,12 @@ input[type="email"]:focus {
   margin-top: 10px;
   width: 100%;
   padding: 20px;
+  border-radius: 7px;
 }
 
 .btn-login:hover {
-  background-color: #ff5500;
-  -webkit-transition: all 0.2s ease;
+  background-color: #002e8a9d;
+  -webkit-transition: all 0.8s ease;
   transition: all 0.2s ease;
 }
 
